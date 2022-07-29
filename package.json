@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.html",
+  "type": "module",
   "scripts": {
-    "start": "wds"
+    "start": "wds",
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,10 @@
   "devDependencies": {
     "@web/dev-server": "^0.1.32",
     "@web/dev-server-esbuild": "^0.3.1",
-    "esbuild": "^0.14.51"
+    "esbuild": "^0.14.51",
+    "fs-extra": "^10.1.0"
+  },
+  "dependencies": {
+    "box2d-wasm": "^7.0.0"
   }
 }
